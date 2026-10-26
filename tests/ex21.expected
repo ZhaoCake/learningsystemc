@@ -1,0 +1,6 @@
+A in @ 0 s
+B in @ 1 ns
+A out @ 10 ns
+C in @ 10 ns
+B out @ 11 ns
+C out @ 20 ns

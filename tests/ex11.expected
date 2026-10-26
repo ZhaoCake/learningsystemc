@@ -1,0 +1,3 @@
+wire = X @ 0 s
+wire = 1 @ 10 ns
+wire = Z @ 20 ns

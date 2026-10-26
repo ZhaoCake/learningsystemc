@@ -1,0 +1,4 @@
+arm irq #1 @ 0 s
+handle irq #1 @ 8 ns
+handle irq #2 @ 13 ns
+arm irq #3 @ 18 ns

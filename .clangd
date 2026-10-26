@@ -1,0 +1,15 @@
+# learningsystemc 的编辑器语言服务（clangd）配置：只影响补全、跳转和诊断。
+# 实际编译由 lsx.py 调 MSVC 完成，见 README.md。
+# 注意：这里的 include 路径是绝对路径，把仓库挪到别的盘/目录时要跟着改
+#（仓库根目录的 .clangd 同理）。
+CompileFlags:
+  Add:
+    - -std=c++17
+    - -ID:/WorkSpace/systemc_playground/third_party/systemc-install/include
+    - -D_CRT_SECURE_NO_WARNINGS
+    # 本机 clangd 是 18.x，而 VS2022 17.14 的 MSVC STL 要求 Clang >= 19，
+    # 不放开这个宏，每个文件第一行都会报 "error STL1000"。
+    # 换成 clangd 19+ 之后这一行可以删掉。
+    - -D_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH
+Diagnostics:
+  UnusedIncludes: None

@@ -1,0 +1,4 @@
+tick 0 @ 5 ns
+tick 1 @ 10 ns
+tick 2 @ 15 ns
+main resumes @ 17 ns

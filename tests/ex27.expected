@@ -1,0 +1,8 @@
+stage: 1 -> 2 @ 0 s
+sink: 2 @ 0 s
+stage: 2 -> 4 @ 10 ns
+sink: 4 @ 10 ns
+stage: 3 -> 6 @ 20 ns
+sink: 6 @ 20 ns
+stage: 4 -> 8 @ 30 ns
+sink: 8 @ 30 ns

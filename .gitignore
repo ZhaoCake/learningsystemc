@@ -1,0 +1,6 @@
+build/
+.lsx_progress.json
+__pycache__/
+*.o
+*.obj
+wave*.vcd
